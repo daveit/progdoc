@@ -1,0 +1,15 @@
+<h1>Create a New document</h1>
+
+<%= simple_form_for @document do |f| %>
+    <%= f.association :product %>
+    <%= f.input :deldoc %>
+    <%= f.input :lotnum %>
+    <%= f.input :custord %>
+    <%= f.input :salesorder %>
+    <%= f.input :docname %>
+    <%= f.input :docdate %>
+
+    <%= f.button :submit %>
+<% end %>
+
+<%= link_to 'Back', documents_path %>

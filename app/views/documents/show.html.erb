@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Deldoc:</strong>
+  <%= @document.deldoc %>
+</p>
+
+<p>
+  <strong>Lotnum:</strong>
+  <%= @document.lotnum %>
+</p>
+
+<p>
+  <strong>Custord:</strong>
+  <%= @document.custord %>
+</p>
+
+<p>
+  <strong>Docdate:</strong>
+  <%= @document.docdate %>
+</p>
+
+<p>
+  <strong>Salesorder:</strong>
+  <%= @document.salesorder %>
+</p>
+
+<p>
+  <strong>Docname:</strong>
+  <%= @document.docname %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @document.product %>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

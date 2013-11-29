@@ -1,0 +1,45 @@
+<%= form_for(@document) do |f| %>
+  <% if @document.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@document.errors.count, "error") %> prohibited this document from being saved:</h2>
+
+      <ul>
+      <% @document.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :deldoc %><br>
+    <%= f.text_field :deldoc %>
+  </div>
+  <div class="field">
+    <%= f.label :lotnum %><br>
+    <%= f.text_field :lotnum %>
+  </div>
+  <div class="field">
+    <%= f.label :custord %><br>
+    <%= f.text_field :custord %>
+  </div>
+  <div class="field">
+    <%= f.label :docdate %><br>
+    <%= f.date_select :docdate %>
+  </div>
+  <div class="field">
+    <%= f.label :salesorder %><br>
+    <%= f.text_area :salesorder %>
+  </div>
+  <div class="field">
+    <%= f.label :docname %><br>
+    <%= f.text_field :docname %>
+  </div>
+  <div class="field">
+    <%= f.label :product_id %><br>
+    <%= f.text_field :product_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

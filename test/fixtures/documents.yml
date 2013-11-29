@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deldoc: MyString
+  lotnum: MyString
+  custord: MyString
+  docdate: 2013-11-18
+  salesorder: MyText
+  docname: MyString
+  product_id: 
+
+two:
+  deldoc: MyString
+  lotnum: MyString
+  custord: MyString
+  docdate: 2013-11-18
+  salesorder: MyText
+  docname: MyString
+  product_id: 

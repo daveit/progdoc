@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="46385576">
+    <data-source source="LOCAL" name="Rails progress: development" uuid="d512c20b-06cc-4f57-90c7-880dec8d4ff2">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:progress_development</jdbc-url>
+      <user-name>daveport</user-name>
+      <user-password>dfc2dfcbdfd8dfd8dfd3dfda</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails progress: test" uuid="f8c9ab29-e6f7-416c-9e60-7fbea9c0c0ba">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:progress_test</jdbc-url>
+      <user-name>daveport</user-name>
+      <user-password>dfc2dfcbdfd8dfd8dfd3dfda</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

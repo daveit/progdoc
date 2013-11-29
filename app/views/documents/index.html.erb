@@ -1,0 +1,39 @@
+<h1>Listing documents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Deldoc</th>
+      <th>Lotnum</th>
+      <th>Custord</th>
+      <th>Docdate</th>
+      <th>Salesorder</th>
+      <th>Docname</th>
+      <th>Product</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @documents.each do |document| %>
+      <tr>
+        <td><%= document.deldoc %></td>
+        <td><%= document.lotnum %></td>
+        <td><%= document.custord %></td>
+        <td><%= document.docdate %></td>
+        <td><%= document.salesorder %></td>
+        <td><%= document.docname %></td>
+        <td><%= document.product %></td>
+        <td><%= link_to 'Show', document %></td>
+        <td><%= link_to 'Edit', edit_document_path(document) %></td>
+        <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Document', new_document_path %>
